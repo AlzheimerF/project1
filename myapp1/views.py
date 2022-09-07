@@ -8,5 +8,11 @@ def main_page(request):
 def create_message(request):
     return HttpResponse('Vfds')
 
-def first_html(request):
-    return render(request, 'base.html')
+def base_html(request):
+    return render(request, 'myapp1/base.html')
+
+def staffs_html(request):
+    return render(request, 'myapp1/staffs.html')
+
+def heroes_html(request):
+    return render(request, '')
