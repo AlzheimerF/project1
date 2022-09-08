@@ -38,13 +38,52 @@ aside ul li:hover, aside ul a:hover {
     transform: scale(1.05);
 }
 
-myapp1 .features {
+
+main .staff {
     float: left;
     color: #fff;
-    margin-top: 100px;
+    margin-top: 50px;
     text-align: center;
     width: 75%;
+    position: relative;
+    height: 300px;
 }
 
-main . features h1 {font-size: 50px;}
-main .features p {max-width: 400px; margin: 20px auto}
+main .staff1 {
+    float: left;
+    color: #fff;
+    margin-top: 50px;
+    text-align: center;
+    width: 75%;
+    position: relative;
+    height: 100px;
+}
+
+main .staffs {
+    float: left;
+    color: #fff;
+    text-align: left;
+    width: 50%;
+    position: relative;
+    margin-top: -200px;
+    max-width: 200px;
+    height: 250px;
+
+}
+
+main .heroes {
+    float: left;
+    color: #fff;
+    text-align: left;
+    width: 50%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 250px;
+    height: 200px;
+
+}
+
+main .staff h1 {font-size: 50px; max-width: 300;}
+main .staff p {max-width: 400px; margin: 20px auto}
+main .heroes img {height: 100px;}

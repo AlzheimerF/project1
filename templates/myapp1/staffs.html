@@ -1,10 +1,51 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends 'myapp1/base.html' %}
+{% load static %}
+{% block title %}Предметы{% endblock %}
 
-</body>
-</html>
+{% block content %}
+  <div class="staff">
+    <h1>Предметы</h1>
+  </div>
+
+  <div class="staffs">
+    <img src="{% static 'myapp1/img/aghanims_scepter.jpg' %}" alt="">
+    <h3>Aghanim's Scepter</h3>
+    <h4>Улучшает ульт, а также некоторые способности всех героев.</h4>
+  </div>
+
+<div class="staffs">
+  <img src="{% static 'myapp1/img/monkey_king_bar.jpg' %}" alt="">
+  <h3>Monkey King Bar</h3>
+  <h4>Каждая атака может с вероятностью в 80% пройти сквозь уклонение
+    и нанести 70 дополнительного магического урона.</h4>
+</div>
+
+<div class="staffs">
+  <img src="{% static 'myapp1/img/butterfly.jpg' %}" alt="">
+  <h3>Butterfly</h3>
+  <h4>+25 к урону,
+      +35% к уклонению,
+      +30 к скорости атаки,
+      +35 к ловкости.</h4>
+</div>
+
+<div class="staffs">
+  <img src="{% static 'myapp1/img/desolator.jpg' %}" alt="">
+  <h3>Desolator</h3>
+  <h4>Ваши атаки уменьшают броню цели на 6. Эффект длится 7 секунд.</h4>
+</div>
+
+<div class="staffs">
+  <img src="{% static 'myapp1/img/assault_cuirass.jpg' %}" alt="">
+  <h3>Assault Cuirass</h3>
+  <h4>Увеличивает броню союзных построек и
+    существ на 5, а их скорость атаки — на 25. Снижает броню врагов поблизости на 5.</h4>
+</div>
+<div class="staffs">
+  <img src="{% static 'myapp1/img/scythe_of_vyse.jpg' %}" alt="">
+  <h3>Scythe of Vyse</h3>
+  <h4>Превращает цель в безобидную зверушку на 3,5 сек. Жертва не может атаковать, применять способности или
+    использовать предметы, а её базовая скорость падает до 140. Мгновенно уничтожает иллюзии.</h4>
+</div>
+
+{% endblock %}

@@ -9,10 +9,10 @@ def create_message(request):
     return HttpResponse('Vfds')
 
 def base_html(request):
-    return render(request, 'myapp1/base.html')
+    return render(request, 'myapp1/index.html')
 
 def staffs_html(request):
     return render(request, 'myapp1/staffs.html')
 
 def heroes_html(request):
-    return render(request, '')
+    return render(request, 'myapp1/heroes.html')
